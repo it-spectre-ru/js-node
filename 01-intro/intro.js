@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const http = require('node:http');
 const path = require('node:path');
 
-const PORT = 8800;
+const PORT = 8000;
 
 const MIME_TYPES = {
   default: 'application/octet-stream',
@@ -12,7 +12,8 @@ const MIME_TYPES = {
   js: 'application/javascript; charset=UTF-8',
   css: 'text/css',
   png: 'image/png',
-  jpg: 'image/gif',
+  jpg: 'image/jpg',
+  gif: 'image/gif',
   ico: 'image/x-icon',
   svg: 'image/svg+xml',
 };
@@ -21,22 +22,22 @@ const STATIC_PATH = path.join(process.cwd(), './static');
 
 const toBool = [() => true, () => false];
 
-const prepareFiles = async (url) => {
+const prepareFile = async (url) => {
   const paths = [STATIC_PATH, url];
-  if (url.endWith('/')) path.push('index.html');
-  const filePath = paths.join(...paths);
+  if (url.endsWith('/')) paths.push('index.html');
+  const filePath = path.join(...paths);
   const pathTraversal = !filePath.startsWith(STATIC_PATH);
   const exists = await fs.promises.access(filePath).then(...toBool);
   const found = !pathTraversal && exists;
   const streamPath = found ? filePath : STATIC_PATH + '/404.html';
-  const ext = path.extname(streamPath).substring(1).toLocaleLowerCase();
+  const ext = path.extname(streamPath).substring(1).toLowerCase();
   const stream = fs.createReadStream(streamPath);
   return { found, ext, stream };
 };
 
 http
   .createServer(async (req, res) => {
-    const file = await prepareFiles(req.url);
+    const file = await prepareFile(req.url);
     const statusCode = file.found ? 200 : 404;
     const mimeType = MIME_TYPES[file.ext] || MIME_TYPES.default;
     res.writeHead(statusCode, { 'Content-Type': mimeType });
@@ -45,4 +46,4 @@ http
   })
   .listen(PORT);
 
-console.log(`Server running at http://127.0.0.1:${PORT}`);
+console.log(`Server running at http://127.0.0.1:${PORT}/`);
