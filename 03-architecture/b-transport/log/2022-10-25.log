@@ -1,0 +1,57 @@
+2022-10-25T05:24:14	Static on port 8000
+2022-10-25T05:24:14	API on port 8001
+2022-10-25T05:24:19	::1 say /api/talks/say
+2022-10-25T05:24:19	{ message: [ 'hello' ] }
+2022-10-25T05:24:20	::1 say /api/talks/say
+2022-10-25T05:24:20	{ message: [ 'hello' ] }
+2022-10-25T05:24:23	::1 say /api/talks/say
+2022-10-25T05:24:23	{ message: [ 'hello' ] }
+2022-10-25T05:24:48	::1 say /api/talks/say
+2022-10-25T05:24:48	{ message: [ 'hello' ] }
+2022-10-25T05:26:17	::1 say /api/talks/say
+2022-10-25T05:26:17	{ message: [ 'hello' ] }
+2022-10-25T05:26:18	::1 say /api/talks/say
+2022-10-25T05:26:18	{ message: [ 'hello' ] }
+2022-10-25T05:26:20	::1 say /api/talks/say
+2022-10-25T05:26:20	{ message: [ 'hello' ] }
+2022-10-25T05:26:22	::1 say /api/talks/say
+2022-10-25T05:26:22	{ message: [ 'hello' ] }
+2022-10-25T05:26:32	::1 say /api/talks/say
+2022-10-25T05:26:32	{ message: [ 'hello' ] }
+2022-10-25T05:26:56	::1 say /api/talks/say
+2022-10-25T05:26:56	{ message: [ 'hello' ] }
+2022-10-25T05:27:45	::1 say /api/talks/say
+2022-10-25T05:27:45	{ message: [ 'hello' ] }
+2022-10-25T05:27:45	::1 read /api/user/read
+2022-10-25T05:28:06	Static on port 8000
+2022-10-25T05:28:06	API on port 8001
+2022-10-25T05:28:12	::1 say /api/talks/say
+2022-10-25T05:28:12	{ message: [ 'hello' ] }
+2022-10-25T05:28:12	::1 read /api/user/read
+2022-10-25T05:28:44	Static on port 8000
+2022-10-25T05:28:44	API on port 8001
+2022-10-25T05:28:46	::1 say /api/talks/say
+2022-10-25T05:28:46	{ message: [ 'hello' ] }
+2022-10-25T05:28:46	::1 read /api/user/read
+2022-10-25T05:29:21	Static on port 8000
+2022-10-25T05:29:21	API on port 8001
+2022-10-25T05:29:28	::1 say /api/talks/say
+2022-10-25T05:29:28	{ message: [ 'hello' ] }
+2022-10-25T05:29:28	::1 read /api/user/read
+2022-10-25T05:31:41	Static on port 8000
+2022-10-25T05:31:41	API on port 8001
+2022-10-25T05:31:43	::1 say /api/talks/say
+2022-10-25T05:31:43	{ message: [ 'hello' ] }
+2022-10-25T05:31:44	::1 say /api/talks/say
+2022-10-25T05:31:44	{ message: [ 'hello' ] }
+2022-10-25T05:33:19	::1 read /api/user/read
+2022-10-25T05:34:01	Static on port 8000
+2022-10-25T05:34:01	API on port 8001
+2022-10-25T05:34:03	::1 read /api/user/read
+2022-10-25T05:34:19	Static on port 8000
+2022-10-25T05:34:19	API on port 8001
+2022-10-25T05:34:21	::1 read /api/user/read
+2022-10-25T05:34:55	Static on port 8000
+2022-10-25T05:34:55	API on port 8001
+2022-10-25T05:34:59	::1 say /api/talks/say
+2022-10-25T05:34:59	{ message: [ 'hello' ] }
