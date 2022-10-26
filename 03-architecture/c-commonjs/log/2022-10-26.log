@@ -1,0 +1,12 @@
+2022-10-26T05:49:32	Static on port 8000
+2022-10-26T05:49:32	API on port 8001
+2022-10-26T05:50:03	Static on port 8000
+2022-10-26T05:50:03	API on port 8001
+2022-10-26T05:50:05	::1 talks.say("hello")
+2022-10-26T05:50:05	::1 country.read(2)
+2022-10-26T05:50:06	::1 talks.say("hello")
+2022-10-26T05:50:06	::1 country.read(2)
+2022-10-26T05:50:07	::1 talks.say("hello")
+2022-10-26T05:50:07	::1 country.read(2)
+2022-10-26T05:50:07	::1 talks.say("hello")
+2022-10-26T05:50:07	::1 country.read(2)
