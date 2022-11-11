@@ -6,7 +6,7 @@ module.exports = {
   },
   api: {
     port: 8001,
-    transport: 'ws',
+    transport: 'http',
   },
   sandbox: {
     timeout: 5000,
@@ -16,7 +16,7 @@ module.exports = {
     host: '127.0.0.1',
     port: 5432,
     database: 'example',
-    user: 'postgres',
-    password: 'postgres',
+    user: 'marcus',
+    password: 'marcus',
   },
 };

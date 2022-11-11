@@ -6,6 +6,7 @@
   "private": true,
   "main": "main.js",
   "dependencies": {
+    "metasql": "^2.1.0",
     "pg": "^8.8.0",
     "ws": "^8.8.1"
   }
