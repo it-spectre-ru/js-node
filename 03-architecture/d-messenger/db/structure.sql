@@ -5,6 +5,7 @@ CREATE TABLE "Role" (
 
 ALTER TABLE "Role" ADD CONSTRAINT "pkRole" PRIMARY KEY ("roleId");
 CREATE UNIQUE INDEX "akRoleName" ON "Role" ("name");
+
 CREATE TABLE "Account" (
   "accountId" bigint generated always as identity,
   "login" varchar(64) NOT NULL,
@@ -22,6 +23,7 @@ CREATE TABLE "AccountRole" (
 ALTER TABLE "AccountRole" ADD CONSTRAINT "pkAccountRole" PRIMARY KEY ("accountId", "roleId");
 ALTER TABLE "AccountRole" ADD CONSTRAINT "fkAccountRoleAccount" FOREIGN KEY ("accountId") REFERENCES "Account" ("accountId") ON DELETE CASCADE;
 ALTER TABLE "AccountRole" ADD CONSTRAINT "fkAccountRoleRole" FOREIGN KEY ("roleId") REFERENCES "Role" ("roleId") ON DELETE CASCADE;
+
 CREATE TABLE "Area" (
   "areaId" bigint generated always as identity,
   "name" varchar NOT NULL,
@@ -40,6 +42,7 @@ CREATE TABLE "AreaAccount" (
 ALTER TABLE "AreaAccount" ADD CONSTRAINT "pkAreaAccount" PRIMARY KEY ("areaId", "accountId");
 ALTER TABLE "AreaAccount" ADD CONSTRAINT "fkAreaAccountArea" FOREIGN KEY ("areaId") REFERENCES "Area" ("areaId") ON DELETE CASCADE;
 ALTER TABLE "AreaAccount" ADD CONSTRAINT "fkAreaAccountAccount" FOREIGN KEY ("accountId") REFERENCES "Account" ("accountId") ON DELETE CASCADE;
+
 CREATE TABLE "Message" (
   "messageId" bigint generated always as identity,
   "areaId" bigint NOT NULL,
@@ -50,6 +53,7 @@ CREATE TABLE "Message" (
 ALTER TABLE "Message" ADD CONSTRAINT "pkMessage" PRIMARY KEY ("messageId");
 ALTER TABLE "Message" ADD CONSTRAINT "fkMessageArea" FOREIGN KEY ("areaId") REFERENCES "Area" ("areaId");
 ALTER TABLE "Message" ADD CONSTRAINT "fkMessageFrom" FOREIGN KEY ("fromId") REFERENCES "Account" ("accountId");
+
 CREATE TABLE "Session" (
   "sessionId" bigint generated always as identity,
   "accountId" bigint NOT NULL,
