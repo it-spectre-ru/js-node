@@ -1,3 +1,1 @@
-declare namespace common {
-  function hash(password: string): Promise<string>;
-}
+export function hash(password: string): Promise<string>;

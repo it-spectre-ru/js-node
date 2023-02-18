@@ -1,0 +1,6 @@
+2023-01-28T12:22:50	Static on port 8000
+2023-01-28T12:22:50	API on port 8001
+2023-01-28T12:23:09	::1 signin /api/auth/signin
+2023-01-28T12:23:09	{ method: 'auth.signin', login: undefined, password: undefined }
+2023-02-01T09:07:58	::1 signin /api/auth/signin
+2023-02-01T09:07:58	{ method: 'auth.signin', login: undefined, password: undefined }
